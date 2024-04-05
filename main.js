@@ -2,13 +2,11 @@ import inquirer from "inquirer";
 let myBalance = 20000; //Dollar
 let myPin = 5678;
 let pinAnswer = await inquirer.prompt([
-    {
-        name: "pin",
+    { name: "pin",
         message: "enter your pin code :",
         type: "number",
-    },
+    }
 ]);
-console.log(pinAnswer.pin);
 //56789 = 5678 - false
 //conditional operators:
 if (pinAnswer.pin === myPin) {
@@ -19,7 +17,7 @@ if (pinAnswer.pin === myPin) {
             message: "please select option : ",
             type: "list",
             choices: ["withdraw", "check balance"],
-        },
+        }
     ]);
     console.log(operationAns);
     if (operationAns.operation === "withdraw") {
@@ -28,7 +26,7 @@ if (pinAnswer.pin === myPin) {
                 name: "amount",
                 message: "enter your amount : ",
                 type: "number",
-            },
+            }
         ]);
         // = , -= , += (assignment operator):
         myBalance -= amountAns.amount;
