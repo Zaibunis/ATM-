@@ -1,8 +1,8 @@
 {
-  "name": "@zaibunisa/atm",
+  "name": "@zaibu/atm",
   "version": "1.0.0",
   "description": "atm with typescript , node.js and inquirer",
-  "main": "index.js",
+  "main": "main.js",
   "type": "module",
   "publishConfig": {
     "access": "public"
