@@ -1,5 +1,5 @@
 {
-  "name": "@zaibu/atm",
+  "name": "@zaibuu/atm",
   "version": "1.0.0",
   "description": "atm with typescript , node.js and inquirer",
   "main": "main.js",
