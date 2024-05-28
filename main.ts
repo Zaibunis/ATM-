@@ -30,11 +30,14 @@ if (pinAnswer.pin === myPin) {
         message: "enter your amount : ",
         type: "number",
       },
-    ]);
-
+    ]);if(amountAns.amount > myBalance){
+      console.log("Insufficient Balance")
+    }else{
     // = , -= , += (assignment operator):
-    myBalance -= amountAns.amount;
-    console.log("Your remaining balance is : " + myBalance);
+    myBalance -= amountAns.amount
+    console.log(`${amountAns.amount} Withdraw successfully`);
+    console.log(`Your Remaining Balance is : ${myBalance}`) 
+  }
   } else if (operationAns.operation === "check balance") {
     console.log("Your balance is : " + myBalance);
   }
